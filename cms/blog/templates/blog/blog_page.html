@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-blogpage{% endblock %}
+
+{% block content %}
+    <article class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-4">{{ page.title }}</h1>
+        <p class="text-gray-600 mb-6">{{ page.date|date:"F j, Y" }}</p>
+
+        <div class="prose max-w-none mb-8">
+            {{ page.intro }}
+        </div>
+
+        <div class="prose max-w-none mb-8">
+            {{ page.body|richtext }}
+        </div>
+
+        {% if page.gallery_images.all %}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                {% for item in page.gallery_images.all %}
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        {% image item.image fill-320x240 class="w-full h-48 object-cover" %}
+                        <p class="p-4 text-gray-700">{{ item.caption }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <p class="mt-8">
+            <a href="{{ page.get_parent.url }}" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                Return to blog
+            </a>
+        </p>
+    </article>
+{% endblock %}
+

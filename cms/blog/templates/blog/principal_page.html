@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación Increíble</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-600 to-blue-500 min-h-screen">
+    <header class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-white text-2xl font-bold">Cocking-live</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#caracteristicas" class="text-white hover:text-purple-200">Características</a>
+                    <a href="#testimonios" class="text-white hover:text-purple-200">Testimonios</a>
+                    <a href="#contacto" class="text-white hover:text-purple-200">Quienes somos</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-white text-purple-600 px-4 py-2 rounded-md hover:bg-purple-100 transition duration-300">Iniciar Sesión</a>
+                    <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition duration-300">Registrarse</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section class="text-center text-white">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Bienvenido tu blog de cocina.</h1>
+            <p class="text-xl mb-8">Tus mejores recetas en un solo lugar, con la mejor comunidad, comparte con tus amigos, familia, con quien quieras !!  </p>
+            <a href="#" class="bg-white text-purple-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-purple-100 transition duration-300">Comenzar Ahora</a>
+        </section>
+
+        <section id="caracteristicas" class="mt-20">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">Características Principales</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-6 text-white">
+                    <h3 class="text-xl font-semibold mb-4">Fácil de Usar</h3>
+                    <p>Nuestra interfaz intuitiva te permite comenzar en segundos, sin complicaciones.</p>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-6 text-white">
+                    <h3 class="text-xl font-semibold mb-4">Altamente Personalizable</h3>
+                    <p>Adapta la aplicación a tus necesidades con nuestras opciones de personalización.</p>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-6 text-white">
+                    <h3 class="text-xl font-semibold mb-4">Soporte 24/7</h3>
+                    <p>Nuestro equipo de soporte está disponible en todo momento para ayudarte.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="mt-20">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">Lo que dicen nuestros usuarios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-6 text-white">
+                    <p class="mb-4">"MiApp ha revolucionado la forma en que trabajo. ¡No puedo imaginar mi vida sin ella!"</p>
+                    <p class="font-semibold">- María G.</p>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-6 text-white">
+                    <p class="mb-4">"La mejor inversión que he hecho este año. Altamente recomendada."</p>
+                    <p class="font-semibold">- Carlos R.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="mt-20">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">Contáctanos</h2>
+            <form class="max-w-md mx-auto">
+                <div class="mb-4">
+                    <input type="text" placeholder="Nombre" class="w-full px-4 py-2 rounded-md bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-300">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Email" class="w-full px-4 py-2 rounded-md bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-300">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Mensaje" rows="4" class="w-full px-4 py-2 rounded-md bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-300"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-white text-purple-600 px-4 py-2 rounded-md hover:bg-purple-100 transition duration-300">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg mt-20">
+        <div class="container mx-auto px-6 py-4 text-center text-white">
+            <p>&copy; 2023 MiApp. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
